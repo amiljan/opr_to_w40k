@@ -5,10 +5,13 @@ document.body.addEventListener('mouseover', function (e) {
 
     if (hoveredElement.textContent.includes('Robot Lord')) {
         tooltipContent = 'Overlord';
-        imageUrl = "images/overlord.png";
+        imageUrl = "https://github.com/amiljan/opr_to_w40k/blob/main/images/overlord.png";
     } else if (hoveredElement.textContent.includes('Tri-Scorpion Lord')) {
         tooltipContent = 'Skorpekh Lord';
-        imageUrl = "images/skorpekh_lord.png";
+        imageUrl = "https://github.com/amiljan/opr_to_w40k/blob/main/images/skorpekh_lord.png";
+    } else if (hoveredElement.textContent.includes('Annihilator Lord')) {
+        tooltipContent = 'Lokhust Lord';
+        imageUrl = "https://github.com/amiljan/opr_to_w40k/blob/main/images/annihilator_lord.png";
     }
 
     if (tooltipContent) {
