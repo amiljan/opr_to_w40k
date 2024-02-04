@@ -85,7 +85,78 @@ document.body.addEventListener('mouseover', function (e) {
         tooltipContent = 'Doom Scythe';
         imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/doom_scythe.png";
     }
-
+// Astra Militarum
+    if (hoveredElement.textContent.includes('Robot Lord')) {
+        tooltipContent = 'Overlord, Cryptek';
+        imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/overlord.png";
+    } else if (hoveredElement.textContent.includes('Company Leader')) {
+        tooltipContent = 'Cadian Castellan';
+        imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/cadian_castellan.png";
+    } else if (hoveredElement.textContent.includes('Storm Leader')) {
+        tooltipContent = 'Tempestus Scions Commander';
+        imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/tempestus_scions_commander.png";
+    } else if (hoveredElement.textContent.includes('Conscripts')) {
+        tooltipContent = 'Cadian Shock Troops';
+        imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/cadian_shock_troops.png";       
+    } else if (hoveredElement.textContent.includes('Infantry Squad')) {
+        tooltipContent = 'Veteran Guardsmen';
+        imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/veteran_guardsmen.png";
+    } else if (hoveredElement.textContent.includes('Veterans')) {
+        tooltipContent = 'Gaunts Ghosts';
+        imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/gaunts_ghosts.png";
+    } else if (hoveredElement.textContent.includes('Weapon Teams')) {
+        tooltipContent = 'Cadian Heavy Weapon Squad';
+        imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/cadian_heavy_weapon_squad.png"; 
+    } else if (hoveredElement.textContent.includes('Special Weapons')) {
+        tooltipContent = 'Kill Team Kasrkin';
+        imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/kill_team_kasrkin.png";
+    } else if (hoveredElement.textContent.includes('Storm Troopers')) {
+        tooltipContent = 'Militarum Tempestus Scions';
+        imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/militarum_tempestus_scions.png";
+    } else if (hoveredElement.textContent.includes('Sniper Squad')) {
+        tooltipContent = 'Cadian Snipers';
+        imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/cadian_snipers.png";
+    } else if (hoveredElement.textContent.includes('OGRE Squad')) {
+        tooltipContent = 'Ogryns';
+        imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/ogryns.png";
+    } else if (hoveredElement.textContent.includes('Cavalry Squad')) {
+        tooltipContent = 'Attilan Rough Riders';
+        imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/attilan_rough_riders.png";
+    } else if (hoveredElement.textContent.includes('Light Walker')) {
+        tooltipContent = 'Scout Sentinel';
+        imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/scout_sentinel.png";
+    } else if (hoveredElement.textContent.includes('Armored Truck')) {
+        tooltipContent = 'Taurox';
+        imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/taurox.png";
+    } else if (hoveredElement.textContent.includes('Light APC')) {
+        tooltipContent = 'Chimera';
+        imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/chimera.png";
+    } else if (hoveredElement.textContent.includes('Attack Vehicle')) {
+        tooltipContent = 'Hellhound';
+        imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/hellhound.png";
+    } else if (hoveredElement.textContent.includes('Support Vehicle')) {
+        tooltipContent = 'Basilisk';
+        imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/basilisk.png";
+    } else if (hoveredElement.textContent.includes('Battle Tank')) {
+        tooltipContent = 'Leman Russ';
+        imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/leman_russ.png";
+    } else if (hoveredElement.textContent.includes('Field Artillery')) {
+        tooltipContent = 'Field Ordnance Battery';
+        imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/field_ordnance_battery.png";
+    } else if (hoveredElement.textContent.includes('Heavy Battle Tank')) {
+        tooltipContent = 'Rogal Dorn';
+        imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/rogal_dorn.png";
+    } else if (hoveredElement.textContent.includes('Super Heavy Battle Tank')) {
+        tooltipContent = 'Baneblade';
+        imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/baneblade.png";
+    } else if (hoveredElement.textContent.includes('Light Gunship')) {
+        tooltipContent = 'Valkyrie';
+        imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/valkyrie.png";
+    } else if (hoveredElement.textContent.includes('Heavy Gunship')) {
+        tooltipContent = 'Valkyrie';
+        imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/valkyrie.png";
+    }
+// Post Army lists
     if (tooltipContent) {
         let tooltipElement = document.createElement('div');
         let imageElement = document.createElement('img');
@@ -93,8 +164,8 @@ document.body.addEventListener('mouseover', function (e) {
 
         textElement.textContent = tooltipContent;
         imageElement.src = imageUrl;
-        imageElement.style.width = "500px";
-        imageElement.style.height = "500px";
+        imageElement.style.width = "300px";
+        imageElement.style.height = "300px";
         tooltipElement.appendChild(textElement);
         tooltipElement.appendChild(imageElement);
         tooltipElement.className = 'my-extension-tooltip';
