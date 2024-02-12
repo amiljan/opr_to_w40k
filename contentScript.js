@@ -101,7 +101,7 @@ document.body.addEventListener('mouseover', function (e) {
     } else if (hoveredElement.textContent.includes('Infantry Squad')) {
         tooltipContent = 'Veteran Guardsmen';
         imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/veteran_guardsmen.png";
-    } else if (hoveredElement.textContent.includes('Veterans')) {
+    } else if (hoveredElement.textContent.includes('Veteran Squad')) {
         tooltipContent = 'Gaunts Ghosts';
         imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/gaunts_ghosts.png";
     } else if (hoveredElement.textContent.includes('Weapon Teams')) {
