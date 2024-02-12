@@ -137,16 +137,16 @@ document.body.addEventListener('mouseover', function (e) {
     } else if (hoveredElement.textContent.includes('Support Vehicle')) {
         tooltipContent = 'Basilisk';
         imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/basilisk.png";
-    } else if (hoveredElement.textContent.includes('Battle Tank')) {
+    } else if (hoveredElement.textContent.trim().toLowerCase() === 'battle tank'.toLowerCase()) {
         tooltipContent = 'Leman Russ';
         imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/leman_russ.png";
     } else if (hoveredElement.textContent.includes('Field Artillery')) {
         tooltipContent = 'Field Ordnance Battery';
         imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/field_ordnance_battery.png";
-    } else if (hoveredElement.textContent.includes('Heavy Battle Tank')) {
+    } else if (hoveredElement.textContent.trim().toLowerCase() === 'heavy battle tank'.toLowerCase()) {
         tooltipContent = 'Rogal Dorn';
         imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/rogal_dorn.png";
-    } else if (hoveredElement.textContent.includes('Super Heavy Battle Tank')) {
+    } else if (hoveredElement.textContent.trim().toLowerCase() === 'super heavy battle tank'.toLowerCase()) {
         tooltipContent = 'Baneblade';
         imageUrl = "https://raw.githubusercontent.com/amiljan/opr_to_w40k/main/images/baneblade.png";
     } else if (hoveredElement.textContent.includes('Light Gunship')) {
